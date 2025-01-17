@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización Criptomonedas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="fondo-movible"></div>
+    <div class="container">
+        <h1>Consulta la Cotización de Criptomonedas</h1>
+        <form id="formulario">
+            <div class="form-group">
+                <label for="moneda">Elige tu Moneda</label>
+                <select id="moneda" name="moneda">
+                    <option value="USD">Dólar Estadounidense</option>
+                    <option value="EUR">Euro</option>
+                    <option value="MXN">Peso Mexicano</option>
+                    <option value="GBP">Libra Esterlina</option>
+                    <option value="JPY">Yen Japonés</option>
+                    <option value="CAD">Dólar Canadiense</option>
+                    <option value="AUD">Dólar Australiano</option>
+                    <option value="CHF">Franco Suizo</option>
+                    <option value="CNY">Yuan Chino</option>
+                    <option value="BRL">Real Brasileño</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="criptomonedas">Elige tu Criptomoneda</label>
+                <select id="criptomonedas" name="criptomoneda">
+                    <option value="BTC">Bitcoin</option>
+                    <option value="ETH">Ethereum</option>
+                    <option value="LTC">Litecoin</option>
+                    <option value="XRP">Ripple (XRP)</option>
+                    <option value="BCH">Bitcoin Cash</option>
+                    <option value="ADA">Cardano</option>
+                    <option value="DOT">Polkadot</option>
+                    <option value="SOL">Solana</option>
+                    <option value="DOGE">❤Dogecoin❤</option>
+                    <option value="MATIC">Polygon</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Cotizar">
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
